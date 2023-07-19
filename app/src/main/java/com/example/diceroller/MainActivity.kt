@@ -56,9 +56,6 @@ fun DiceRollerApp() {
             .wrapContentSize(Alignment.Center))
 
 }
-
-
-
 @Composable
 fun DiceWithButtonAndImage(modifier: Modifier = Modifier) {
     var result by remember { mutableStateOf(1) }
@@ -76,7 +73,6 @@ fun DiceWithButtonAndImage(modifier: Modifier = Modifier) {
         //adding just a title.
         Text(text = stringResource(R.string.Title))
         Spacer(modifier = Modifier.height(100.dp))
-
 
         Image(painter = painterResource(imageResource), contentDescription = result.toString())
         //Now the button is tappable, but a tap of the button won't cause any visual change yet
