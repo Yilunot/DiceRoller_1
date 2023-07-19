@@ -76,7 +76,7 @@ fun DiceWithButtonAndImage(modifier: Modifier = Modifier) {
 
         Image(painter = painterResource(imageResource), contentDescription = result.toString())
         //Now the button is tappable, but a tap of the button won't cause any visual change yet
-        // because you still need to build that functionality.
+        // because you still need to build that functionality. 2.0
         Spacer(modifier = Modifier.height(20.dp))
         Button(onClick = { result = (1..6).random()}
         ) {
